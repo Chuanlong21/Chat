@@ -17,6 +17,7 @@ struct ContactList: View {
             List{
                 Group{
                     SearchEntry()
+                        
                     ContactRow(icon: "contact_new_friend", title: "新的朋友", style: .system)
                    
                     ForEach(contacts){ contact in
@@ -40,7 +41,6 @@ struct ContactList: View {
                 }
                 .listRowInsets(EdgeInsets())
                
-                
             }
             .id(contacts.count)
             .onAppear(perform: {
@@ -48,7 +48,6 @@ struct ContactList: View {
             })
             .listStyle(PlainListStyle())
             
-        
         }
      
         

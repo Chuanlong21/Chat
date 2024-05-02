@@ -11,7 +11,7 @@ struct test: View {
     var body: some View {
         VStack{
             Text("Hello, World!")
-            SearchEntry()
+    
         }
         
     }

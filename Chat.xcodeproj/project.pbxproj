@@ -22,6 +22,7 @@
 		62646AAC2BE3109700BB2F12 /* ContactList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62646AAB2BE3109700BB2F12 /* ContactList.swift */; };
 		62646AB02BE31D2900BB2F12 /* OriginalButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62646AAF2BE31D2900BB2F12 /* OriginalButtonStyle.swift */; };
 		62646AB32BE31E5700BB2F12 /* BBSwiftUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 62646AB22BE31E5700BB2F12 /* BBSwiftUIKit */; };
+		62646AB52BE4508100BB2F12 /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62646AB42BE4508100BB2F12 /* ContactView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		62646AA92BE30D3500BB2F12 /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
 		62646AAB2BE3109700BB2F12 /* ContactList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactList.swift; sourceTree = "<group>"; };
 		62646AAF2BE31D2900BB2F12 /* OriginalButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriginalButtonStyle.swift; sourceTree = "<group>"; };
+		62646AB42BE4508100BB2F12 /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 			children = (
 				62646AA72BE3094E00BB2F12 /* Contact.swift */,
 				62646AA92BE30D3500BB2F12 /* Member.swift */,
+				62646AB42BE4508100BB2F12 /* ContactView.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 				62646A9E2BE1BA0300BB2F12 /* SearchEntry.swift in Sources */,
 				62646AB02BE31D2900BB2F12 /* OriginalButtonStyle.swift in Sources */,
 				62646AAC2BE3109700BB2F12 /* ContactList.swift in Sources */,
+				62646AB52BE4508100BB2F12 /* ContactView.swift in Sources */,
 				62646AA02BE1C23200BB2F12 /* test.swift in Sources */,
 				62646AA32BE1C3D600BB2F12 /* KeyboardHelper.swift in Sources */,
 				62646A872BE07E0900BB2F12 /* ContentView.swift in Sources */,

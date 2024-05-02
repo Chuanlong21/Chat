@@ -19,23 +19,22 @@ struct SearchEntry: View {
                 Image(systemName: "magnifyingglass")
                     .resizable()
                     .scaledToFit()
-                    .foregroundColor(.gray)
+                    .foregroundColor(.secondary)
                     .frame(width: 16, height: 16)
                     .padding(.leading, 10)
                     
 
                     TextField("Search", text: $searchText)
-                        .foregroundColor(.primary)
+                        .foregroundColor(.secondary)
                         .padding(3)
                         .background(Color(.systemGray6))
-                        .cornerRadius(12)
+                        .cornerRadius(6)
                         .padding(.trailing, 10)
                         .lineLimit(1)
                     }
-                    .frame(height: 40)
-                    .background(Color(.systemGray5))
-                    .cornerRadius(12)
-                    .padding()
+                    .frame(height: 45)
+                    .background(.lightGray)
+                   
                     
            
         }

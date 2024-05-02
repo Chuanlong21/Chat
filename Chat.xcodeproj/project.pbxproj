@@ -16,6 +16,12 @@
 		62646A9E2BE1BA0300BB2F12 /* SearchEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62646A9D2BE1BA0300BB2F12 /* SearchEntry.swift */; };
 		62646AA02BE1C23200BB2F12 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62646A9F2BE1C23200BB2F12 /* test.swift */; };
 		62646AA32BE1C3D600BB2F12 /* KeyboardHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62646AA22BE1C3D600BB2F12 /* KeyboardHelper.swift */; };
+		62646AA62BE3065800BB2F12 /* ContactRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62646AA52BE3065800BB2F12 /* ContactRow.swift */; };
+		62646AA82BE3094E00BB2F12 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62646AA72BE3094E00BB2F12 /* Contact.swift */; };
+		62646AAA2BE30D3500BB2F12 /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62646AA92BE30D3500BB2F12 /* Member.swift */; };
+		62646AAC2BE3109700BB2F12 /* ContactList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62646AAB2BE3109700BB2F12 /* ContactList.swift */; };
+		62646AB02BE31D2900BB2F12 /* OriginalButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62646AAF2BE31D2900BB2F12 /* OriginalButtonStyle.swift */; };
+		62646AB32BE31E5700BB2F12 /* BBSwiftUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 62646AB22BE31E5700BB2F12 /* BBSwiftUIKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +35,11 @@
 		62646A9D2BE1BA0300BB2F12 /* SearchEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchEntry.swift; sourceTree = "<group>"; };
 		62646A9F2BE1C23200BB2F12 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		62646AA22BE1C3D600BB2F12 /* KeyboardHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHelper.swift; sourceTree = "<group>"; };
+		62646AA52BE3065800BB2F12 /* ContactRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactRow.swift; sourceTree = "<group>"; };
+		62646AA72BE3094E00BB2F12 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		62646AA92BE30D3500BB2F12 /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
+		62646AAB2BE3109700BB2F12 /* ContactList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactList.swift; sourceTree = "<group>"; };
+		62646AAF2BE31D2900BB2F12 /* OriginalButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriginalButtonStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62646AB32BE31E5700BB2F12 /* BBSwiftUIKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +122,8 @@
 		62646A952BE0847000BB2F12 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				62646AA72BE3094E00BB2F12 /* Contact.swift */,
+				62646AA92BE30D3500BB2F12 /* Member.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -117,6 +131,7 @@
 		62646A962BE0847B00BB2F12 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				62646AA42BE3064A00BB2F12 /* Contact */,
 				62646A9C2BE1B9EE00BB2F12 /* Search */,
 			);
 			path = Module;
@@ -142,8 +157,18 @@
 			isa = PBXGroup;
 			children = (
 				62646AA22BE1C3D600BB2F12 /* KeyboardHelper.swift */,
+				62646AAF2BE31D2900BB2F12 /* OriginalButtonStyle.swift */,
 			);
 			path = "Helper files";
+			sourceTree = "<group>";
+		};
+		62646AA42BE3064A00BB2F12 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				62646AA52BE3065800BB2F12 /* ContactRow.swift */,
+				62646AAB2BE3109700BB2F12 /* ContactList.swift */,
+			);
+			path = Contact;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +187,9 @@
 			dependencies = (
 			);
 			name = Chat;
+			packageProductDependencies = (
+				62646AB22BE31E5700BB2F12 /* BBSwiftUIKit */,
+			);
 			productName = Chat;
 			productReference = 62646A812BE07E0900BB2F12 /* Chat.app */;
 			productType = "com.apple.product-type.application";
@@ -190,6 +218,9 @@
 				Base,
 			);
 			mainGroup = 62646A782BE07E0900BB2F12;
+			packageReferences = (
+				62646AB12BE31E5700BB2F12 /* XCRemoteSwiftPackageReference "BBSwiftUIKit" */,
+			);
 			productRefGroup = 62646A822BE07E0900BB2F12 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -216,13 +247,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62646AA82BE3094E00BB2F12 /* Contact.swift in Sources */,
 				62646A9E2BE1BA0300BB2F12 /* SearchEntry.swift in Sources */,
+				62646AB02BE31D2900BB2F12 /* OriginalButtonStyle.swift in Sources */,
+				62646AAC2BE3109700BB2F12 /* ContactList.swift in Sources */,
 				62646AA02BE1C23200BB2F12 /* test.swift in Sources */,
 				62646AA32BE1C3D600BB2F12 /* KeyboardHelper.swift in Sources */,
 				62646A872BE07E0900BB2F12 /* ContentView.swift in Sources */,
 				62646A992BE0852E00BB2F12 /* ActivityIndicator.swift in Sources */,
 				62646A852BE07E0900BB2F12 /* ChatApp.swift in Sources */,
 				62646A9B2BE0865B00BB2F12 /* Separator.swift in Sources */,
+				62646AA62BE3065800BB2F12 /* ContactRow.swift in Sources */,
+				62646AAA2BE30D3500BB2F12 /* Member.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,6 +462,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		62646AB12BE31E5700BB2F12 /* XCRemoteSwiftPackageReference "BBSwiftUIKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Silence-GitHub/BBSwiftUIKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		62646AB22BE31E5700BB2F12 /* BBSwiftUIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 62646AB12BE31E5700BB2F12 /* XCRemoteSwiftPackageReference "BBSwiftUIKit" */;
+			productName = BBSwiftUIKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 62646A792BE07E0900BB2F12 /* Project object */;
 }

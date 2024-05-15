@@ -8,10 +8,16 @@
 import SwiftUI
 //空白页
 struct Separator: View {
+    let color: Color
+    
     var body: some View {
         Divider()
+            .overlay(color)
             .padding(.zero)
-            .overlay(.white)
+    }
+    
+    init(color: Color = Color("separator")) {
+        self.color = color
     }
 }
 

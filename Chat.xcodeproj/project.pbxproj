@@ -23,6 +23,10 @@
 		62646AB02BE31D2900BB2F12 /* OriginalButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62646AAF2BE31D2900BB2F12 /* OriginalButtonStyle.swift */; };
 		62646AB32BE31E5700BB2F12 /* BBSwiftUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 62646AB22BE31E5700BB2F12 /* BBSwiftUIKit */; };
 		62646AB52BE4508100BB2F12 /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62646AB42BE4508100BB2F12 /* ContactView.swift */; };
+		62646AB82BF4325900BB2F12 /* ChatRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62646AB72BF4325900BB2F12 /* ChatRow.swift */; };
+		62646ABA2BF432F100BB2F12 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62646AB92BF432F100BB2F12 /* Chat.swift */; };
+		62646ABC2BF4386800BB2F12 /* ChatList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62646ABB2BF4386800BB2F12 /* ChatList.swift */; };
+		62646ABE2BF43EEE00BB2F12 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62646ABD2BF43EEE00BB2F12 /* ChatView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +46,10 @@
 		62646AAB2BE3109700BB2F12 /* ContactList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactList.swift; sourceTree = "<group>"; };
 		62646AAF2BE31D2900BB2F12 /* OriginalButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriginalButtonStyle.swift; sourceTree = "<group>"; };
 		62646AB42BE4508100BB2F12 /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
+		62646AB72BF4325900BB2F12 /* ChatRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRow.swift; sourceTree = "<group>"; };
+		62646AB92BF432F100BB2F12 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		62646ABB2BF4386800BB2F12 /* ChatList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatList.swift; sourceTree = "<group>"; };
+		62646ABD2BF43EEE00BB2F12 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +135,7 @@
 				62646AA72BE3094E00BB2F12 /* Contact.swift */,
 				62646AA92BE30D3500BB2F12 /* Member.swift */,
 				62646AB42BE4508100BB2F12 /* ContactView.swift */,
+				62646AB92BF432F100BB2F12 /* Chat.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -134,6 +143,7 @@
 		62646A962BE0847B00BB2F12 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				62646AB62BF4324100BB2F12 /* Chat */,
 				62646AA42BE3064A00BB2F12 /* Contact */,
 				62646A9C2BE1B9EE00BB2F12 /* Search */,
 			);
@@ -172,6 +182,16 @@
 				62646AAB2BE3109700BB2F12 /* ContactList.swift */,
 			);
 			path = Contact;
+			sourceTree = "<group>";
+		};
+		62646AB62BF4324100BB2F12 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				62646AB72BF4325900BB2F12 /* ChatRow.swift */,
+				62646ABB2BF4386800BB2F12 /* ChatList.swift */,
+				62646ABD2BF43EEE00BB2F12 /* ChatView.swift */,
+			);
+			path = Chat;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,13 +275,17 @@
 				62646AB02BE31D2900BB2F12 /* OriginalButtonStyle.swift in Sources */,
 				62646AAC2BE3109700BB2F12 /* ContactList.swift in Sources */,
 				62646AB52BE4508100BB2F12 /* ContactView.swift in Sources */,
+				62646ABC2BF4386800BB2F12 /* ChatList.swift in Sources */,
 				62646AA02BE1C23200BB2F12 /* test.swift in Sources */,
 				62646AA32BE1C3D600BB2F12 /* KeyboardHelper.swift in Sources */,
 				62646A872BE07E0900BB2F12 /* ContentView.swift in Sources */,
 				62646A992BE0852E00BB2F12 /* ActivityIndicator.swift in Sources */,
 				62646A852BE07E0900BB2F12 /* ChatApp.swift in Sources */,
 				62646A9B2BE0865B00BB2F12 /* Separator.swift in Sources */,
+				62646ABE2BF43EEE00BB2F12 /* ChatView.swift in Sources */,
 				62646AA62BE3065800BB2F12 /* ContactRow.swift in Sources */,
+				62646AB82BF4325900BB2F12 /* ChatRow.swift in Sources */,
+				62646ABA2BF432F100BB2F12 /* Chat.swift in Sources */,
 				62646AAA2BE30D3500BB2F12 /* Member.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

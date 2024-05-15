@@ -25,7 +25,9 @@ struct ContactRow: View {
             Text(title)
                 .font(.system(size: 16))
                 .foregroundStyle(.primary)
-        }.padding(EdgeInsets(top: 10, leading: 16, bottom: 10, trailing: 16))
+        }
+        .padding(EdgeInsets(top: 10, leading: 16, bottom: 10, trailing: 16))
+        
     }
 }
 

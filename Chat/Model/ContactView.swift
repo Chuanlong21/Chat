@@ -9,9 +9,13 @@ import SwiftUI
 
 struct ContactView: View {
     var body: some View {
-        VStack{
+        ZStack{
+            
             ContactList()
         }
+        
+        
+       
     }
 }
 

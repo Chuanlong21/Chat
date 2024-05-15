@@ -14,40 +14,46 @@ struct ContactList: View {
     
     var body: some View {
         NavigationView(){
-            List{
-                Group{
-                    SearchEntry()
+        
+                List{
+                    Group{
+                        SearchEntry()
                         
-                    ContactRow(icon: "contact_new_friend", title: "新的朋友", style: .system)
-                   
-                    ForEach(contacts){ contact in
-                        Section(header: CustomSectionHeader(title: contact.letter)){
-                            
-                            ForEach(contact.members){member in
-                                
-                                NavigationLink(destination: test()){
-                                    ContactRow(
-                                        icon: member.icon,
-                                        title: member.name,
-                                        style: .system)
+                        ContactRow(icon: "contact_new_friend", title: "新的朋友", style: .system)
+                        
+                        
+                        Group{
+                            ForEach(contacts){ contact in
+                                Section(header: CustomSectionHeader(title: contact.letter)){
+                                    ForEach(contact.members){member in
+                                        
+                                        NavigationLink(destination: test()){
+                                            ContactRow(
+                                                icon: member.icon,
+                                                title: member.name,
+                                                style: .system)
+                                        }
+                                        
+                                    }
                                 }
-                                
+                             
                             }
                         }
                        
-                     
+                        
                     }
                     
+                    .listRowInsets(EdgeInsets())
+                    .listSectionSpacing(0)
                 }
-                .listRowInsets(EdgeInsets())
-               
-            }
-            .id(contacts.count)
-            .onAppear(perform: {
-                load()
-            })
-            .listStyle(PlainListStyle())
-            
+                .id(contacts.count)
+                .onAppear(perform: {
+                    load()
+                })
+                .listSectionSeparator(.hidden)
+                .listStyle(PlainListStyle())
+                .navigationTitle("Contacts")
+                .navigationBarTitleDisplayMode(.inline)
         }
      
         
